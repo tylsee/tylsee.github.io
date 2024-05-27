@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- Start of HTML -->
+<html lang="en" id="feedbackpage">
+
+<!-- File Header Comments -->
+<!-- Description: Feedback Page -->
+<!-- Author: Aleeya Batrisya -->
+<!-- Date: 26/03/2024 -->
+<!-- Validated: OK 28/05/2024 -->
+
+	<!-- Start of Head -->
+	<head>
+		<title>Feedback | Lollapalooza</title>
+		<link rel="icon" type="image/x-icon" href="images/icon.png">
+		<meta charset="utf-8">
+		<meta name="author" content="Aleeya Batrisya">
+		<meta name="description" content="Feedback Form">
+		<meta name="keywords" content="feedback, form">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="function.js"></script>
+	</head>
+	<!-- End of Head -->
+
+	<!-- Start of Body -->
+	<body>
+		<!-- Start of Navigation Menu -->
+		<nav class="topnav" id="myNav">
+			<ul>
+				<li class="dropdown" id="aboutnav">
+					<a href="about.html">About</a>
+					<ul class="drop-content">
+						<li><a href="partners.html">Our Partners</a></li>
+					</ul>
+				</li>
+				<li class="dropdown" id="plannav">
+					<a href="plan.html">Plan</a>
+					<ul class="drop-content">
+						<li><a href="location.html">Location</a></li>
+						<li><a href="rules.html">Rules & Guidelines</a></li>
+					</ul>
+				</li>
+				<li class="dropdown" id="ticketsnav">
+					<a href="tickets.html">Tickets</a>
+					<ul class="drop-content">
+						<li><a href="ticketinfo.html">Ticket Information</a></li>
+						<li><a href="packages.html">Packages</a></li>
+					</ul>
+				</li>
+				<li id="homenav"><a href="index.html"><img class="logo" src="images/logo.png" alt="Home"></a></li>
+				<li id="merchnav"><a href="merch.html">Merch</a></li>
+				<li id="faqnav"><a href="faq.html">FAQ</a></li>
+				<li id="feedbacknav"><a href="feedback.html">Feedback</a></li>
+			</ul>
+			<!-- Menu Icon -->
+			<div class="menuicon">
+			<!-- Will make the menu icon clickable -->
+				<a onclick="myFunction()" href="javascript:void(0);">
+				<!-- Lines of the Menu Icon-->
+					<div></div>
+					<div></div>
+					<div></div>
+				</a>
+			</div>
+		<!-- End of Navigation -->
+		</nav>
+		<!-- End of Navigation Menu -->
+
+		<!-- Start of Header -->
+		<header id="header">
+			<h1>Feedback</h1>
+			<p>Drop us a Feedback!</p>
+		</header>
+		<!-- End of Header -->
+
+		<!-- Start of Article -->
+		<article>
+			<p><a href="index.html">Home</a> &gt; <a href="feedback.html">Feedback</a></p>
+			<h2>Form</h2>
+			<form name="order" action="feedback.com" method="post" enctype="text/plain">
+				<fieldset>
+					<legend>Personal Information</legend>
+					<ol>
+						<li>
+							<label for="name">Name</label>
+							<input type="text" placeholder="Include your first and last name" name="name" size="40" id="name" required="required">
+						</li>
+						<li>
+							<label>Gender</label>
+							<input id="male" type="radio" name="gender" class="male" value="male" required="required" checked="checked"> <label for="male">Male</label> 
+							<input id="female" type="radio" name="gender" class="female" value="female" required="required"> <label for="female">Female</label>
+						</li>
+						<li>
+							<label for="email">Email</label>
+							<input id="email" type="email" name="email" size="40" required="required">
+						</li>
+						<li>
+							<label for="date_of_birth">Date of birth</label>
+							<input id="date_of_birth" type="date" name="date">
+						</li>
+						<li>
+							<label for="area">Area(Select your state)</label>
+							<select name="area" id="area">
+								<option value="AL">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+								<option value="CT">Connecticut</option>
+								<option value="DE">Delaware</option>
+								<option value="DC">District of Columbia</option>
+								<option value="FL">Florida</option>
+								<option value="GA">Georgia</option>
+								<option value="HI">Hawaii</option>
+								<option value="ID">Idaho</option>
+								<option value="IL">Illinois</option>
+								<option value="IN">Indiana</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="ME">Maine</option>
+								<option value="MD">Maryland</option>
+								<option value="MA">Massachusetts</option>
+								<option value="MI">Michigan</option>
+								<option value="MN">Minnesota</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="MT">Montana</option>
+								<option value="NE">Nebraska</option>
+								<option value="NV">Nevada</option>
+								<option value="NH">New Hampshire</option>
+								<option value="NJ">New Jersey</option>
+								<option value="NM">New Mexico</option>
+								<option value="NY">New York</option>
+								<option value="NC">North Carolina</option>
+								<option value="ND">North Dakota</option>
+								<option value="OH">Ohio</option>
+								<option value="OK">Oklahoma</option>
+								<option value="OR">Oregon</option>
+								<option value="PA">Pennsylvania</option>
+								<option value="RI">Rhode Island</option>
+								<option value="SC">South Carolina</option>
+								<option value="SD">South Dakota</option>
+								<option value="TN">Tennessee</option>
+								<option value="TX">Texas</option>
+								<option value="UT">Utah</option>
+								<option value="VT">Vermont</option>
+								<option value="VA">Virginia</option>
+								<option value="WA">Washington</option>
+								<option value="WV">West Virginia</option>
+								<option value="WI">Wisconsin</option>
+								<option value="WY">Wyoming</option>
+								<option value="Other">Other</option>
+							</select>
+						</li>
+					</ol>
+				</fieldset>
+				<fieldset>
+					<legend>Questions</legend>
+					<ol>
+						<li>
+							<label for="valuablepart">What was the most valuable part of the concert for you?</label>
+							<textarea name="comment" rows="3" id="valuablepart" required="required"></textarea>
+						</li>
+						<li>
+							<label for="improveexperience">How can we improve the concert experience for next time?</label>
+							<textarea name="comment" rows="3" id="improveexperience" required="required"></textarea>
+						</li>
+						<li>
+							<label for="decidedattend">What made you decide to attend the concert?</label>
+							<textarea name="comment" rows="3" id="decidedattend" required="required"></textarea>
+						</li>
+						<li>
+							<label for="additionalsuggestions">Do you have any additional suggestions for this concert?</label>
+							<textarea name="comment" rows="3" id="additionalsuggestions" required="required"></textarea>
+						</li>
+					</ol>
+				</fieldset>
+			</form>
+
+			<p>
+				<input type="submit" value="Send Feedback" class="feedbackbutton">
+				<input type="reset" value="Reset" class="feedbackbutton">
+			</p>
+		</article>
+		<!-- End of Article -->
+
+		<br>
+
+		<!-- Start of Footer -->
+		<footer>
+			<hr>
+			<ul class="footer-list">
+				<li>
+					<p>Festival</p>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="plan.html">Plan</a></li>
+						<li><a href="tickets.html">Tickets</a></li>
+					</ul>
+				</li>
+				<li>
+					<p>Services</p>
+					<ul>
+						<li><a href="https://support.lollapalooza.com/hc/en-us/sections/360013992071" target="_blank">Contact Us</a></li>
+						<li><a href="https://support.lollapalooza.com/hc/en-us" target="_blank">Help Center</a></li>
+						<li><a href="https://support.lollapalooza.com/hc/en-us/articles/4402115973908" target="_blank">Accessibility</a></li>
+						<li><a href="https://support.lollapalooza.com/hc/en-us/sections/360013896192" target="_blank">Safety</a></li>
+						<li><a href="https://support.lollapalooza.com/hc/en-us/articles/4402035906580-How-do-I-contact-the-festival" target="_blank">Press</a></li>
+					</ul>
+				</li>
+				<li>
+					<p>Social Media</p>
+					<ul>
+						<li><a href="https://www.tiktok.com/@lollapalooza" target="_blank">TikTok</a></li>
+						<li><a href="https://instagram.com/lollapalooza" target="_blank">Instagram</a></li>
+						<li><a href="https://www.facebook.com/lollapalooza" target="_blank">Facebook</a></li>
+						<li><a href="https://twitter.com/lollapalooza" target="_blank">X</a></li>
+						<li><a href="https://discord.com/invite/thefestiverse" target="_blank">Discord</a></li>
+						<li><a href="https://www.youtube.com/@lollapalooza" target="_blank">YouTube</a></li>
+					</ul>
+				</li>
+			</ul>
+			<br>
+			<address>&copy; <a href="CCAT.html">CCAT</a> | Last Updated: 7 April 2024</address>
+		</footer>
+		<!-- End of Footer -->
+	</body>
+	<!-- End of Body -->
+</html> 
+<!-- End of HTML -->
